@@ -1,9 +1,9 @@
-iterated-prisoner-s-dilemma-game
+game theory's game collection
 
-this is a iterated prisoner's dilemma game with the largest number of strategies
+this is a game theory's game with the largest number of strategies
 
-the number of strategies in this project is 620
+the number of strategies in this project is 678
 
-"what this project about?" this project about iterated prisoner's dilemma game
+"what this project about?" this project about game theory
 
-"why are you make it?" to collecting every strategy that ever exist in this world
+"why are you make it?" to collecting every game theory's strategies that ever exist in this world
