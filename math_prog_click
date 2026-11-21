@@ -1,0 +1,28 @@
+import time, msvcrt
+
+def timeout_input_instant(second):
+    start = time.time()
+    while time.time() - start < second:
+        if msvcrt.kbhit():
+            char = msvcrt.getch().decode(errors='ignore')
+            return char
+    return None
+
+def advance_timeout_input_instant(second):
+    start = time.time()
+    while time.time() - start < second:
+        if msvcrt.kbhit():
+            char = msvcrt.getch()
+            if char in (b'\x00', b'\xe0'):
+                char2 = msvcrt.getch()
+                if char2 == b'H':
+                    return "UP_ARROW"
+                elif char2 == b'P':
+                    return "DOWN_ARROW"
+                elif char2 == b'K':
+                    return "LEFT_ARROW"
+                elif char2 == b'M':
+                    return "RIGHT_ARROW"
+            else:
+                return char.decode(errors='ignore')
+    return None
